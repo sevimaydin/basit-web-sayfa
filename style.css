@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url(image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: fantasy;
+    color: #f3f3f3;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+   
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    
+
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+
+    
+}
+.navbar ul li a:hover{
+    background:#ff6e00;
+    border-radius: 2px;
+}
+
+.container .center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+.center h1{
+    color: white;
+    background-color: rgb(126, 207, 45);
+    font-size: 50px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+}
+
+.center h2{
+    color:white;
+    background-color: rgb(126, 207, 45);
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.center .buttons{
+    margin:20px 10px;
+}
+
+.buttons button{
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+    color:white;
+    background-color: #ff6e00;
+    border: solid 1px ;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.7s;
+}
+
+.buttons button:hover{
+    background: #fff;
+}
+
+@media (max-width:768px) {
+    .row{
+        flex-direction: column;
+    }
+ }
